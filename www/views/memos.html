@@ -1,0 +1,24 @@
+<ion-view>
+
+  <ion-header-bar class="bar-stable">
+
+    <div class="buttons">
+      <button class="button button-icon ion-social-freebsd-devil"></button>
+      <h1 class="title">Memos</h1>
+      <!-- <button class="button button-icon ion-erlenmeyer-flask-bubbles" ng-click="addItem()"></button> -->
+      <button class="button button-icon ion-android-clipboard" ng-click="addItem()"></button>
+    </div>
+  </ion-header-bar>
+
+  <ion-content>
+    <ul class="list">
+      <li class="item item-icon-left item-text-wrap item-icon-right" ng-repeat="item in items">
+        <p>{{item.name}}</p>
+        <i class="icon ion-edit" ng-click="editItem(item)"></i>
+        <i class="icon ion-trash-a" ng-click="removeItem(item)"></i>
+      </li>
+    </ul>
+  </ion-content>
+
+</ion-view>
+
